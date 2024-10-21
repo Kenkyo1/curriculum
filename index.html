@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheets" href="styles.css">
 </head>
 
 <body>
@@ -25,40 +25,40 @@
     </nav>
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <p>Trabajo para algun lugar de su casa</p>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
         </section>
         <section>
-            <h2>imagen</h2>
-            <img src="https://placehold.co/600x400" alt="Placeholder Image" />
+            <h2 class="subtitle">imagen</h2>
+            <img id="photo" src="https://placehold.co/600x400" alt="photo">
         </section>
         <section>
-            <h2>video local</h2>
+            <h2 class="subtitle">video local</h2>
             <video width="600" controls>
                 <source src="ruta/al/video.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta de video.
             </video>
         </section>
         <section>
-            <h2>video de youtube</h2>
+            <h2 class="subtitle">video de youtube</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/0oVYKvXNPbw" frameborder="0"
                 allowfullscreen></iframe>
         </section>
         <section>
-            <h2>Mapa con leaflet</h2>
+            <h2 class="subtitle">Mapa con leaflet</h2>
             <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
             <style>
                 #map {
@@ -86,7 +86,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section>
-            <h2>Contactanos</h2>
+            <h2 class="subtitle">Contactanos</h2>
             <form>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
