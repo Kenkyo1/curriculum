@@ -80,3 +80,45 @@ section {
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
 
+#resumen {
+
+    /* Modelo de diseño flexible */
+  display: flex;
+
+  /* Distribuye el espacio entre y alrededor
+     de los items en el eje principal */
+  justify-content: space-evenly;
+
+
+  /* Alinea los elementos al centro dentro
+     del bloque respecto con el eje transversal */
+  align-items: center;
+
+  /* Eje principal: por columna */
+  flex-direction: column;
+
+  /* Altura de 24% del área de visualización */
+  height: 24vh;
+
+  /* Apilamiento de elementos: ajustado 
+  hasta ocupar el máximo */
+  flex-wrap: wrap; 
+
+}
+
+#resumen h2, #resumen p {
+  width: 50%;
+}
+
+#resumen img {
+    max-width: 50%;
+}
+
+nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;									
+    justify-content: space-around;
+    background-color: black;
+}
+
