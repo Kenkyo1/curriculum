@@ -141,3 +141,15 @@ footer ul {
     margin: 0 auto;
     display: table;
 }
+
+
+/*CONTACTO*/
+
+#contacto {
+    text-align: center;
+}
+
+#contacto > h2 {
+    text-align: center;
+}
+
