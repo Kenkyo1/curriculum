@@ -1,10 +1,26 @@
 * {
 
     /* Familia de fuentes */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 
     /* Grosor de la fuente 200 */
     font-weight: 200;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
 }
 
 h1 {
@@ -119,6 +135,9 @@ nav ul {
     /* Modelo de diseño flexible */
     display: flex;									
     justify-content: space-around;
-    background-color: black;
 }
 
+footer ul {
+    margin: 0 auto;
+    display: table;
+}
