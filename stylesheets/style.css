@@ -23,6 +23,17 @@ li {
     list-style-type: none;
 }
 
+#basic-information {
+    text-align: center;
+}
+
+#basic-information img {
+    border-radius: 50%;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
 h1 {
 
     /* Alineación del texto */
