@@ -11,12 +11,64 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --primary-color: #000;
+    --secondary-color: #f0b27a;
+}
+
 a {
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+header {
+    height: 75vh;
+}
+
+header nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100;
+    margin: auto;
+    height: 10vh;
+}
+
+header nav ul {
+    padding-top: 2vh;
+    font-size: 1.2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+header nav li {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    transition: 1s;
+}
+
+header nav li:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+header nav li:hover a {
+    color: white;
+}
+
+header nav ul a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 li {
@@ -24,6 +76,7 @@ li {
 }
 
 #basic-information {
+    top: 10;
     text-align: center;
 }
 
@@ -110,31 +163,32 @@ section {
 #resumen {
 
     /* Modelo de diseño flexible */
-  display: flex;
+    display: flex;
 
-  /* Distribuye el espacio entre y alrededor
+    /* Distribuye el espacio entre y alrededor
      de los items en el eje principal */
-  justify-content: space-evenly;
+    justify-content: space-evenly;
 
 
-  /* Alinea los elementos al centro dentro
+    /* Alinea los elementos al centro dentro
      del bloque respecto con el eje transversal */
-  align-items: center;
+    align-items: center;
 
-  /* Eje principal: por columna */
-  flex-direction: column;
+    /* Eje principal: por columna */
+    flex-direction: column;
 
-  /* Altura de 24% del área de visualización */
-  height: 24vh;
+    /* Altura de 24% del área de visualización */
+    height: 24vh;
 
-  /* Apilamiento de elementos: ajustado 
+    /* Apilamiento de elementos: ajustado 
   hasta ocupar el máximo */
-  flex-wrap: wrap; 
+    flex-wrap: wrap;
 
 }
 
-#resumen h2, #resumen p {
-  width: 50%;
+#resumen h2,
+#resumen p {
+    width: 50%;
 }
 
 #resumen img {
@@ -144,7 +198,7 @@ section {
 nav ul {
 
     /* Modelo de diseño flexible */
-    display: flex;									
+    display: flex;
     justify-content: space-around;
 }
 
@@ -160,7 +214,6 @@ footer ul {
     text-align: center;
 }
 
-#contacto > h2 {
+#contacto>h2 {
     text-align: center;
 }
-
