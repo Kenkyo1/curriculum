@@ -12,8 +12,8 @@
 }
 
 :root {
-    --primary-color: #212f3d;
-    --secondary-color: #f0b27a;
+    --color-one: #212f3d;
+    --color-two: #f0b27a;
 }
 
 a {
@@ -25,16 +25,28 @@ div {
     unicode-bidi: isolate;
 }
 
-.container {
+.nav-container {
     margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    
+}
+
+.main-container {
     box-sizing: border-box;
     margin-bottom: 50px;
 }
 
-/*header*/
+/*body-header*/
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+    height: 75vh;
+}
 
 header nav {
-    background-color: var(--primary-color);
+    background-color: var(--color-one);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -42,34 +54,35 @@ header nav {
     right: 0;
     bottom: 0;
     margin: auto;
-    height: 2vh;
+    height: 8vh;
 }
 
 header nav ul {
     padding-top: 1vh;
     font-size: 1.1rem;
-    background-color: var(--primary-color);
+    background-color: var(--color-one);
     display: flex;
     flex-direction: row;
     gap: 1px;
     justify-content: center;
+    border-bottom: 3px solid var(--color-two);
 }
 
 header nav li {
     padding: 10px;
     flex: 1;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: var(--color-one);
     transition: 1s;
 }
 
 header nav li:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--color-two);
     cursor: pointer;
 }
 
 header nav li:hover a {
-    color: var(--primary-color);
+    color: var(--color-one);
 }
 
 header nav ul a {
@@ -77,7 +90,7 @@ header nav ul a {
     width: 100%;
     height: 100%;
     letter-spacing: 1px;
-    color: var(--secondary-color);
+    color: var(--color-two);
     text-decoration: none;
 }
 
@@ -97,8 +110,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
-    margin-top: 10vh;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -106,7 +118,7 @@ li {
     border-radius: 50%;
     max-width: 250px;
     max-height: 250px;
-    box-shadow: 0px 0px 0px 8px var(--secondary-color);
+    box-shadow: 0px 0px 0px 8px var(--color-two);
 }
 
 h1 {
@@ -125,6 +137,8 @@ h1 {
 
     /* Alto del elemento */
     height: auto;
+
+    margin-top: 100px;
 }
 
 .subtitle {
@@ -134,6 +148,40 @@ h1 {
 
     /* Transformación del texto a mayúsculas */
     text-transform: uppercase;
+}
+
+/*body-main*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--color-one);
+}
+
+.grid-colum {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+}
+
+#acerca-de-mi {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 30px 50px 30px 50px;
+}
+
+p {
+    text-align: justify;
 }
 
 section {
@@ -155,6 +203,8 @@ section {
 
     padding-left: 1.2%;
     padding-right: 1.2%;
+
+    background-color: white;
 }
 
 section {
@@ -177,40 +227,15 @@ section {
 
     /* sombra a un elemento */
 
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -webkit-box-shadow: 3px 3px 1px 0px var(--color-two);
+    -moz-box-shadow: 3px 3px 1px 0px var(--color-two);
+    box-shadow: 3px 3px 1px 0px var(--color-two);
 }
 
-#resumen {
-
-    /* Modelo de diseño flexible */
-    display: flex;
-
-    /* Distribuye el espacio entre y alrededor
-     de los items en el eje principal */
-    justify-content: space-evenly;
-
-
-    /* Alinea los elementos al centro dentro
-     del bloque respecto con el eje transversal */
-    align-items: center;
-
-    /* Eje principal: por columna */
-    flex-direction: column;
-
-    /* Altura de 24% del área de visualización */
-    height: 24vh;
-
-    /* Apilamiento de elementos: ajustado 
-  hasta ocupar el máximo */
-    flex-wrap: wrap;
-
-}
 
 #resumen h2,
 #resumen p {
-    width: 50%;
+    width: auto;
 }
 
 #resumen img {
