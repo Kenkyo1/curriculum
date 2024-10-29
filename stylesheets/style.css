@@ -14,6 +14,7 @@
 :root {
     --color-one: #212f3d;
     --color-two: #f0b27a;
+    --color-three: #d5d8dc;
 }
 
 a {
@@ -34,7 +35,7 @@ div {
 
 .main-container {
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin: 0px 100px 80px 100px;
 }
 
 strong {
@@ -47,6 +48,7 @@ header {
     display: block;
     unicode-bidi: isolate;
     height: 75vh;
+    background-color: #fdf2e9;
 }
 
 header nav {
@@ -176,7 +178,7 @@ main {
     flex-direction: column;
     margin: auto;
     padding: 20px;
-    padding-top: 60px;
+    padding-top: 100px;
     background-color: var(--color-one);
 }
 
@@ -189,7 +191,7 @@ main {
 #acerca-de-mi {
     display: flex;
     justify-content: center;
-    padding: 30px 50px 30px 50px;
+    padding: 80px 50px 80px 50px;
 }
 
 p {
@@ -199,17 +201,84 @@ p {
 #educacion {
     display: flex;
     justify-content: center;
-    padding: 30px 50px 30px 50px;
+    padding: 80px 50px 80px 50px;
 }
 
 #educacion .grid-colum {
     grid-template-columns: 1fr 2fr;
 }
 
-#habilidades img {
-    width: 200px;
-    height: auto;
+.grid-colum-2 {
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "C D";
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+#habilidades {
+    display: flex;
+    justify-content: center;
+    padding: 80px 50px 80px 50px;
+}
+
+#habilidades h2 {
+    text-align: center;
+}
+
+#habilidades h3 {
+    text-align: justify;
+}
+
+#habilidades #java {
+    grid-area: A;
+    padding: 50px;
+    transition: 1s;
+}
+
+#habilidades #java:hover {
+    background-color: var(--color-three);
+}
+
+#habilidades #python {
+    grid-area: B;
+    padding: 50px;
+    transition: 1s;
+    border-left: 0.1pt solid var(--color-three);
+}
+
+#habilidades #python:hover {
+    background-color: var(--color-three);
+}
+
+#habilidades #css {
+    grid-area: C;
+    padding: 50px 79.07px 50px 79.07px;
+    transition: 1s;
+    border-top: 0.1pt solid var(--color-three);
+}
+
+#habilidades #css:hover {
+    background-color: var(--color-three);
+}
+
+#habilidades #html5 {
+    grid-area: D;
+    padding: 50px;
+    transition: 1s;
+    border-top: 0.1pt solid var(--color-three);
+    border-left: 0.1pt solid var(--color-three);
+}
+
+#habilidades #html5:hover {
+    background-color: var(--color-three);
+}
+
+#habilidades img {
+    width: auto;
+    height: 200px;
 }
 
 
