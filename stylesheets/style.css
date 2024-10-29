@@ -20,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 .container {
     margin: 0 auto;
     box-sizing: border-box;
