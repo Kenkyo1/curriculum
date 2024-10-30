@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
+    <meta name="keywords" content="cv, curriculum, Curriculum Vitae, computación, espol, ESPOL">
+    <meta name="description" content="Sitio web dedicado a la presentación del Curriculum Vitae de Angel Gómez">
+    <title>Currículum Vitae - Angel Gómez</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -55,13 +57,12 @@
                 <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
             </div>
         </section>
-        <section class="main-container" id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <p>Trabajo para algun lugar de su casa</p>
-        </section>
         <section class="main-container" id="educacion">
             <div class="grid-colum">
-                <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de la imagen 2">
+                <div id="yt-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
                 <div id="resumen">
                     <h2 class="subtitle">Educación</h2>
                     <p>Todo el conocimiento y preparación que puedo llegar a ofrecer es gracias a la institución
@@ -81,100 +82,63 @@
             <div>
                 <div id="lenguajes">
                     <h2 class="subtitle">Habilidades</h2>
-                    <h3>Durante el curso de mi carrera he adquirido el conocimiento para manejar en un alto nivel los siguientes softwares:</h3>
+                    <h3>Durante el curso de mi carrera he adquirido el conocimiento para manejar en un alto nivel los
+                        siguientes softwares:</h3>
                 </div>
                 <div class="grid-colum-2">
                     <img id="java" src="img/java_ico.png" alt="Icono de Java">
                     <img id="python" src="img/python_ico.png" alt="Icono de Python">
                     <img id="css" src="img/css.png" alt="Icono de CSS">
                     <img id="html5" src="img/html5.png" alt="Icono de HTML5">
+                    <img id="c" src="img/c_ico.png" alt="Icono del lenguaje C">
+                    <img id="sql" src="img/sql_ico.png" alt="Icono de SQL">
                 </div>
             </div>
         </section>
         <section class="main-container" id="proyectos">
             <h2 class="subtitle">Proyectos</h2>
         </section>
-        <section class="main-container" id="imagen">
-            <h2 class="subtitle">imagen</h2>
-            <img id="photo" src="https://placehold.co/600x400" alt="photo">
-        </section>
-        <section class="main-container" id="local-video">
-            <h2 class="subtitle">video local</h2>
-            <video width="600" controls>
-                <source src="ruta/al/video.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-        </section>
-        <section class="main-container" id="yt-video">
-            <h2 class="subtitle">video de youtube</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0oVYKvXNPbw" frameborder="0"
-                allowfullscreen></iframe>
-        </section>
-        <section class="main-container" id="leaflet-map">
-            <h2 class="subtitle">Mapa con leaflet</h2>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-            <style>
-                #map {
-                    height: 400px;
-                    width: 100%;
-                }
-            </style>
-            <div id="map"></div>
-            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-            <script>
-                var map = L.map('map').setView([51.505, -0.09], 13);
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                }).addTo(map);
-                L.marker([51.5, -0.09]).addTo(map)
-                    .bindPopup('¡Hola, mundo!')
-                    .openPopup();
-            </script>
-        </section>
-        <section class="main-container" id="google-map">
-            <h2>Mapa con Google maps</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.25681740348!2d-80.14491792772134!3d-2.1521492262435697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses!2sec!4v1728502080614!5m2!1ses!2sec"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
         <section class="main-container" id="contacto">
-            <h2 class="subtitle">Contactanos</h2>
-            <form action id="formulario">
-                <ul>
-                    <li>
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" id="nombre" placeholder="Angel Gómez Tumbaco" required>
-                    </li>
-                    <li>
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" placeholder="agot2@email.com" required>
-                    </li>
-                    <li>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" rows="4" placeholder="Asunto..." required></textarea>
-                    </li>
-                    <button type="submit">Enviar</button>
-                </ul>
-
-
-                <label for="experiencia">Experiencia Laboral:</label>
-                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
-
-                <label for="educacion">Educación:</label>
-                <textarea id="educacion" name="educacion" rows="5" required></textarea>
-
-                <label>Habilidades Técnicas:</label><br>
-                <div><input type="checkbox" name="habilidades" value="HTML"><span>HTML</span></div>
-                <div><input type="checkbox" name="habilidades" value="CSS"><span>CSS</span></div>
-                <div><input type="checkbox" name="habilidades" value="JavaScript"><span>JavaScript</span></div>
-                <label for="intereses">Intereses:</label>
-                <select id="intereses" name="intereses">
-                    <option value="desarrollo">Desarrollo Web</option>
-                    <option value="diseno">Diseño Gráfico</option>
-                    <option value="marketing">Marketing Digital</option>
-                </select>
-            </form>
+            <div>
+                <div>
+                    <h2 class="subtitle">Contactanos</h2>
+                </div>
+                <div class="grid-colum">
+                    <div id="contacto-form">
+                        <form action id="formulario">
+                            <ul>
+                                <li>
+                                    <label for="nombre">Nombre Completo:</label>
+                                    <input type="text" id="nombre" placeholder="Angel Gómez Tumbaco" required>
+                                </li>
+                                <li>
+                                    <label for="email">Correo Electrónico:</label>
+                                    <input type="email" id="email" placeholder="agot2@email.com" required>
+                                </li>
+                                <li>
+                                    <label for="mensaje">Mensaje:</label>
+                                    <textarea id="mensaje" rows="4" placeholder="Asunto..." required></textarea>
+                                </li>
+                                <button type="submit">Enviar</button>
+                                <li>
+                                    <label for="intereses">Intereses:</label>
+                                    <select id="intereses" name="intereses">
+                                        <option value="desarrollo">Desarrollo Web</option>
+                                        <option value="diseno">Diseño Gráfico</option>
+                                        <option value="marketing">Marketing Digital</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div id="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.25681740348!2d-80.14491792772134!3d-2.1521492262435697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses!2sec!4v1728502080614!5m2!1ses!2sec"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
