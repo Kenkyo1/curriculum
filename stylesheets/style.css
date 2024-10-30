@@ -26,6 +26,12 @@ div {
     unicode-bidi: isolate;
 }
 
+.header-container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
 .nav-container {
     margin: 0 auto;
     box-sizing: border-box;
@@ -35,7 +41,8 @@ div {
 
 .main-container {
     box-sizing: border-box;
-    margin: 0px 100px 80px 100px;
+    margin: 0px auto;
+    margin-bottom: 80px;
 }
 
 strong {
@@ -45,10 +52,10 @@ strong {
 /*body-header*/
 
 header {
-    display: block;
-    unicode-bidi: isolate;
-    height: 75vh;
+    height: 70vh;
     background-color: #fdf2e9;
+    padding: 0;
+    margin: 0;
 }
 
 header nav {
@@ -60,25 +67,26 @@ header nav {
     right: 0;
     bottom: 0;
     margin: auto;
-    height: 8vh;
+    height: 10vh;
+    border-bottom: 3px solid var(--color-two);
+    padding: 0;
 }
 
 header nav ul {
-    padding-top: 1vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
     font-size: 1.1rem;
-    background-color: var(--color-one);
     display: flex;
     flex-direction: row;
     gap: 1px;
     justify-content: center;
-    border-bottom: 3px solid var(--color-two);
 }
 
 header nav li {
     padding: 10px;
     flex: 1;
     text-align: center;
-    background-color: var(--color-one);
     transition: 1s;
 }
 
@@ -98,6 +106,8 @@ header nav ul a {
     letter-spacing: 1px;
     color: var(--color-two);
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -109,14 +119,16 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 60vh;
     gap: 20px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin-top: 150px;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 10vh;
     text-align: center;
 }
 
@@ -176,13 +188,11 @@ h1 {
 body {
     margin: 0;
     padding: 0;
-    overflow-x: auto;   
 }
 
 main {
     display: flex;
     flex-direction: column;
-    margin: auto;
     padding: 20px;
     padding-top: 100px;
     background-color: var(--color-one);
