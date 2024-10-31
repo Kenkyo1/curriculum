@@ -21,28 +21,24 @@ a {
     text-decoration: none;
 }
 
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
 .header-container {
     margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 50px;
 }
 
-.nav-container {
-    margin: 0 auto;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-    
-}
 
 .main-container {
     box-sizing: border-box;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-bottom: 80px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
 }
 
 strong {
@@ -67,7 +63,7 @@ header nav {
     right: 0;
     bottom: 0;
     margin: auto;
-    height: 10vh;
+    height: fit-content;
     border-bottom: 3px solid var(--color-two);
     padding: 0;
 }
@@ -193,9 +189,10 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    padding-top: 100px;
+    padding: 7vw;
+    padding-top: 10vh;
     background-color: var(--color-one);
+    justify-content: center;
 }
 
 .grid-colum {
@@ -334,8 +331,41 @@ p {
     border: 5pt solid var(--color-two);
 }
 
-#contacto-form {
+#formulario li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 20px;
+}
 
+#formulario label {
+    color: var(--color-one);
+    font-weight: bold;
+}
+
+#formulario input[type="text"], input[type="email"], textarea, select {
+    padding: 10px;
+    border: 1px solid var(--color-three);
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: var(--color-two);
+    text-align: center;
+    padding: 3%;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
 }
 
 section {
